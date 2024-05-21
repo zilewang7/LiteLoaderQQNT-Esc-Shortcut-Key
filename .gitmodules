@@ -1,3 +1,4 @@
 [submodule "LiteLoaderQQNT-lite_tools"]
 	path = LiteLoaderQQNT-lite_tools
 	url = https://github.com/xiyuesaves/LiteLoaderQQNT-lite_tools.git
+	branch = v4
