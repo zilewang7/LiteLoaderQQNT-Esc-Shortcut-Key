@@ -34,7 +34,7 @@ const ConfigBuilder = (type: 'main' | 'preload') => defineViteConfig({
     outDir: resolve(OUTPUT_DIR, `./${type}`),
     lib: {
       entry: resolve(SRC_DIR, `./${type}/index.ts`),
-      formats: [ 'cjs' ],
+      formats: ['cjs'],
       fileName: () => 'index.js',
     },
   },
@@ -54,7 +54,10 @@ export default defineConfig({
         },
       }),
       viteCp({
-        targets: [{ src: './manifest.json', dest: 'dist' }],
+        targets: [
+          { src: './manifest.json', dest: 'dist' },
+          { src: './assets/*', dest: 'dist/assets' },
+        ],
       }),
       viteZipPack({
         in: OUTPUT_DIR,
@@ -66,7 +69,7 @@ export default defineConfig({
       outDir: resolve(OUTPUT_DIR, './renderer'),
       lib: {
         entry: resolve(SRC_DIR, './renderer/index.ts'),
-        formats: [ 'es' ],
+        formats: ['es'],
         fileName: () => 'index.js',
       },
       rollupOptions: {

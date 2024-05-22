@@ -1,14 +1,14 @@
 {
-  "name": "lltemplate-vite",
+  "name": "esc-shortcut-key",
   "version": "1.0.0",
-  "description": "A plugin template for LiteLoaderQQNT, powered by Vite & Typescript",
+  "description": "A plugin for LiteLoaderQQNT, which allows you to use esc to return to the previous level (exit the current chat)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint --fix src/**/* --ext .js,.ts",
     "build": "npx electron-vite build"
   },
-  "author": "MisaLiu",
+  "author": "DDC",
   "license": "GPL-3.0-only",
   "devDependencies": {
     "@electron-toolkit/eslint-config-ts": "^1.0.1",
