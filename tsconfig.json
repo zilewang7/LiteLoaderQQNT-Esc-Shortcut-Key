@@ -3,5 +3,9 @@
   "references": [
     { "path": "./tsconfig.node.json" },
     { "path": "./tsconfig.web.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "types": ["./src/global.d.ts"]  // 添加全局类型定义
+  }
 }

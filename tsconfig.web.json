@@ -1,8 +1,13 @@
 {
   "extends": "@electron-toolkit/tsconfig/tsconfig.web.json",
-  "include": ["src/renderer/**/*.ts", "src/preload/*.d.ts"],
+  "include": [
+    "src/renderer/**/*.ts",
+    "src/preload/*.d.ts",
+    "src/**/*.d.ts"  // 添加所有.d.ts文件
+  ],
   "compilerOptions": {
     "composite": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": ["./src/global.d.ts"]  // 添加全局类型定义
   }
 }

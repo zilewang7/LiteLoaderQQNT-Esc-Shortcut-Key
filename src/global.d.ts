@@ -4,6 +4,13 @@ declare namespace LLTemplate_Vite {
   const greeting: (name: string) => void;
 }
 
+// 添加 window.escShortcut 的类型声明
+interface Window {
+  escShortcut: {
+    onPressEscape: (callback: (event: Electron.IpcRendererEvent) => void) => void;
+  }
+}
+
 declare namespace LiteLoader {
   const path: ILiteLoaderPath;
   const versions: ILiteLoaderVersion;
