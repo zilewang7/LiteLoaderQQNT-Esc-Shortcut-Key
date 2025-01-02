@@ -4,7 +4,7 @@
   "name": "ESC 快捷键",
   "slug": "LiteLoaderQQNT-Esc-Shortcut-Key",
   "description": "在 QQNT 中使用 esc 来返回上一级 (退出当前聊天)",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "icon": "./assets/icon.png",
   "authors": [
     {
@@ -26,7 +26,7 @@
     "repo": "zilewang7/LiteLoaderQQNT-Esc-Shortcut-Key",
     "branch": "master",
     "release": {
-      "tag": "0.2.0",
+      "tag": "0.2.1",
       "file": "esc-shortcut-key.zip"
     }
   }

@@ -3,7 +3,7 @@ export function onBrowserWindowCreated(window) {
     window.webContents.on('before-input-event', async (event, input) => {
       if (input.key == 'Escape' && input.type === 'keyDown' && window.isFocused()) {
         event.preventDefault();
-        window.webContents.send('LiteLoaderQQNT-Esc-Shortcut-Key.onPressEscape', { test: 'test' });
+        window.webContents.send('LiteLoaderQQNT-Esc-Shortcut-Key.onPressEscape');
       }
     });
   } catch (err) {

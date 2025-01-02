@@ -1,4 +1,7 @@
-import '../../LiteLoaderQQNT-lite_tools/src/render_modules/hookVue3.js';
+// 仅在没有 hook 过时才引入
+if (!window.isProxyProxy) {
+  import('../../LiteLoaderQQNT-lite_tools/src/render_modules/hookVue3.js');
+}
 
 let escapeClickTime = 0;
 let escapeTimer: number | null = null;

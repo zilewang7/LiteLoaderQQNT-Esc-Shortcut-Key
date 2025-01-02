@@ -8,7 +8,8 @@ declare namespace LLTemplate_Vite {
 interface Window {
   escShortcut: {
     onPressEscape: (callback: (event: Electron.IpcRendererEvent) => void) => void;
-  }
+  };
+  isProxyProxy: boolean;
 }
 
 declare namespace LiteLoader {
