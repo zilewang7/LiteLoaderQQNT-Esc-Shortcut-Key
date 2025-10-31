@@ -24,8 +24,13 @@ window.escShortcut.onPressEscape(() => {
     } else {
       const now = Date.now().valueOf();
       if (now - escapeClickTime <= 1000) {
-        // 双击，关闭窗口
-        window.close();
+        // 双击，关闭/隐藏窗口
+        // macOS 上使用隐藏而不是关闭，避免窗口无法再次打开
+        if (LiteLoader.os.platform === 'darwin') {
+          window.escShortcut.hideMainWindow();
+        } else {
+          window.escShortcut.closeMainWindow();
+        }
       }
       escapeClickTime = now;
 

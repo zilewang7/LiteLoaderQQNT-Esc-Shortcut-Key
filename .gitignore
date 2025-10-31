@@ -2,3 +2,6 @@ node_modules/
 dist/
 *.zip
 *.tsbuildinfo
+
+# MacOS Shit
+.DS_Store

@@ -8,6 +8,8 @@ declare namespace LLTemplate_Vite {
 interface Window {
   escShortcut: {
     onPressEscape: (callback: (event: Electron.IpcRendererEvent) => void) => void;
+    hideMainWindow: () => void;
+    closeMainWindow: () => void;
   };
   isProxyProxy: boolean;
 }
