@@ -8,6 +8,8 @@
   "compilerOptions": {
     "composite": true,
     "strictNullChecks": true,
-    "types": ["./src/global.d.ts"]  // 添加全局类型定义
+    "types": ["./src/global.d.ts"],  // 添加全局类型定义
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"]
   }
 }

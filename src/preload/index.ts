@@ -9,5 +9,13 @@ contextBridge.exposeInMainWorld('escShortcut', {
       'LiteLoaderQQNT-Esc-Shortcut-Key.onPressEscape',
       (...args) => callback(...args)
     );
+  },
+  // 隐藏窗口（macOS 使用）
+  hideMainWindow: () => {
+    ipcRenderer.send('LiteLoaderQQNT-Esc-Shortcut-Key.hideMainWindow');
+  },
+  // 关闭窗口（Windows/Linux 使用）
+  closeMainWindow: () => {
+    ipcRenderer.send('LiteLoaderQQNT-Esc-Shortcut-Key.closeMainWindow');
   }
 });
